@@ -1,0 +1,56 @@
+# Python-specific files
+*.py[cod]           # Python bytecode files
+__pycache__/        # Python cache directories
+*.so                # Compiled shared objects (Cython)
+
+# Virtual environments
+venv/               # Virtual environment folder
+.env/               # Conda or other environment folders
+
+# Jupyter Notebooks checkpoints
+.ipynb_checkpoints/
+
+# TensorFlow/ PyTorch checkpoints and models
+checkpoints/
+*.ckpt              # TensorFlow checkpoints
+*.h5                # Keras/ TensorFlow model files
+*.pth               # PyTorch model files
+*.pt                # PyTorch model files
+
+# Dataset and large files
+data/
+datasets/
+*.csv
+*.tsv
+*.json
+*.hdf5
+*.hd5
+*.npz
+*.npy
+*.pkl
+
+# Logs and TensorBoard files
+logs/
+*.log               # Log files
+events.out.tfevents* # TensorBoard events
+
+# Temporary files and outputs
+*.bak               # Backup files
+*.swp               # Swap files created by editors
+*.tmp               # Temporary files
+
+# Build files
+build/
+dist/
+*.egg-info/
+
+# Docker
+Dockerfile
+*.dockerfile
+
+# VS Code settings
+.vscode/
+
+# System files
+.DS_Store           # macOS
+Thumbs.db           # Windows

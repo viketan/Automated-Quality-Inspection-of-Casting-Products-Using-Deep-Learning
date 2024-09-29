@@ -1,1 +1,5 @@
-"# Automated-Quality-Inspection-of-Casting-Products-Using-Deep-Learning" 
+**Title**: Automated Quality Inspection of Casting Products Using Deep Learning
+**Description**:
+This project focuses on automating the quality inspection process of casting products using deep learning techniques. The dataset consists of grayscale images of submersible pump impellers, categorized into defective and non-defective (ok) classes. Casting defects, such as blowholes, pinholes, and shrinkage defects, are a significant challenge in the casting industry, leading to high rejection rates and financial loss due to manual, time-consuming inspections.
+
+The project aims to develop a classification model that automates the defect detection process, improving accuracy and reducing inspection time. The dataset is already pre-processed with image augmentation applied and includes both 300x300 and 512x512 grayscale images for training and testing. The goal is to create a robust system capable of identifying casting defects, contributing to more efficient quality control in manufacturing.
