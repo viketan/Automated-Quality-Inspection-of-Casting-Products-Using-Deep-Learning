@@ -33,4 +33,10 @@ class EvaluationConfig:
   mlflow_uri: str
   data_dir: Path
 
+@dataclass(frozen=True)
+class PredictionConfig:
+  model_path: Path
+  root_dir: Path
+  img_size: int
+  class_names: list
     

@@ -4,7 +4,8 @@ from src.utils.common import read_yaml, create_directories
 from src.entity import (DataIngestionConfig,
                         TrainingConfig,
                         TrainingParam,
-                        EvaluationConfig)
+                        EvaluationConfig,
+                        PredictionConfig)
 
 class ConfigurationManager:
     def __init__(
@@ -68,5 +69,15 @@ class ConfigurationManager:
             model_path=config.model_path,
             mlflow_uri= config.mlflow_uri,
             data_dir=config.data_dir
+        )
+        return evaluation_config
+    
+    def get_prediction_config(self)-> PredictionConfig:
+        config = self.config.prediction
+        evaluation_config = PredictionConfig(
+            root_dir=config.root_dir,
+            model_path=config.model_path,
+            img_size= config.img_size,
+            class_names=config.class_names
         )
         return evaluation_config

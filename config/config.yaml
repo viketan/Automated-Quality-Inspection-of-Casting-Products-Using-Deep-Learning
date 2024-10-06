@@ -18,4 +18,11 @@ evaluation:
   mlflow_uri: https://dagshub.com/viketanrevankar108/Automated-Quality-Inspection-of-Casting-Products-Using-Deep-Learning.mlflow
   data_dir: artifacts/data_ingestion/casting_data/test
 
+prediction:
+  root_dir: artifacts/predictions
+  model_path: artifacts/training/model.keras
+  class_names: ['def_front','ok_front']
+  img_size: 256
+
+
 
