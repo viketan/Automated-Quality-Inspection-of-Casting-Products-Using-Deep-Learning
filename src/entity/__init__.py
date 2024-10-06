@@ -25,3 +25,12 @@ class TrainingParam:
     optimizer: str
     loss: str
     metrics: str
+
+@dataclass(frozen=True)
+class EvaluationConfig:
+  model_path: Path
+  root_dir: Path
+  mlflow_uri: str
+  data_dir: Path
+
+    

@@ -9,5 +9,13 @@ data_ingestion:
 
 training:
   root_dir: artifacts/training
-  data_dir: artifacts/data_ingestion/casting_data
+  data_dir: artifacts/data_ingestion/casting_data/train
   model_filename: model.keras
+
+evaluation:
+  root_dir: artifacts/evaluation
+  model_path: artifacts/training/model.keras
+  mlflow_uri: https://dagshub.com/viketanrevankar108/Automated-Quality-Inspection-of-Casting-Products-Using-Deep-Learning.mlflow
+  data_dir: artifacts/data_ingestion/casting_data/test
+
+

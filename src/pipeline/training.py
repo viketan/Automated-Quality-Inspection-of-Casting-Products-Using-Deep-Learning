@@ -1,6 +1,7 @@
 from src.config.configuration import ConfigurationManager
 from src.components.data_ingestion import DataIngestion
 from src.components.training import Training
+from src.components.evaluation import Evaluation
 
 
 
@@ -30,6 +31,19 @@ class TrainingPipeline:
         training_param = config.get_training_param()
         training = Training(training_config,training_param)
         training.initiate_training()
+
+STAGE_NAME = "Evaluation stage"
+
+class Evalutionipeline:
+    def __init__(self):
+        pass
+
+    def main(self):
+        config = ConfigurationManager()
+        evaluation_config = config.get_evaluation_config()
+        training_param = config.get_training_param()
+        evaluate = Evaluation(evaluation_config,training_param)
+        evaluate.evaluate_model()
 
 
 

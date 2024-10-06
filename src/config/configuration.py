@@ -3,8 +3,8 @@ from src.constants import *
 from src.utils.common import read_yaml, create_directories
 from src.entity import (DataIngestionConfig,
                         TrainingConfig,
-                        TrainingParam)
-
+                        TrainingParam,
+                        EvaluationConfig)
 
 class ConfigurationManager:
     def __init__(
@@ -60,3 +60,13 @@ class ConfigurationManager:
             metrics= param.metrics
         )
         return training_param
+    
+    def get_evaluation_config(self)-> EvaluationConfig:
+        config = self.config.evaluation
+        evaluation_config = EvaluationConfig(
+            root_dir=config.root_dir,
+            model_path=config.model_path,
+            mlflow_uri= config.mlflow_uri,
+            data_dir=config.data_dir
+        )
+        return evaluation_config
