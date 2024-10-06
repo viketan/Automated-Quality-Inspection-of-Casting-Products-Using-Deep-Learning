@@ -8,7 +8,7 @@ from src.components.evaluation import Evaluation
 
 STAGE_NAME = "Data Ingestion stage"
 
-class DataIngestionTrainingPipeline:
+class DataIngestionPipeline:
     def __init__(self):
         pass
 
