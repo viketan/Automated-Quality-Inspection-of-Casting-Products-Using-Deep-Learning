@@ -1,0 +1,10 @@
+training: 
+  img_size: 256
+  batch_size: 32
+  channel: 3
+  epochs: 10
+  activation_function_hidden: relu
+  activation_function_output: softmax
+  optimizer: adam
+  loss: sparse_categorical_crossentropy
+  metrics: accuracy
