@@ -28,7 +28,7 @@ datasets/
 *.npz
 *.npy
 *.pkl
-
+artifacts/
 # Logs and TensorBoard files
 logs/
 *.log               # Log files
